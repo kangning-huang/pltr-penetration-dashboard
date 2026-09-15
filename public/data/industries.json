@@ -1,0 +1,85 @@
+{
+  "asOf": "2026-09-15",
+  "disclaimer": "Industry series are proxy indices from public disclosures (AIPCon, press, PLTR earnings). Palantir does not disclose commercial revenue mix by industry. Stage labels from industry-tam.md public-evidence rubric only.",
+  "industries": [
+    {
+      "id": "company",
+      "name": "Company (reference)",
+      "stage": null,
+      "stageNote": "Not an industry vertical — PLTR consolidated / US commercial reference series from earnings.",
+      "priority": 0
+    },
+    {
+      "id": "telecom",
+      "name": "Telecom",
+      "stage": "early",
+      "stageSource": "industry-tam.md Table A — Telecommunications",
+      "priority": 1,
+      "flagshipLogos": ["AT&T", "Lumen"]
+    },
+    {
+      "id": "energy",
+      "name": "Energy / Oil & Gas",
+      "stage": "early-mid",
+      "stageSource": "industry-tam.md Table A — Energy / Utilities / O&G",
+      "priority": 2,
+      "flagshipLogos": ["bp", "APA", "Rio Tinto", "Centrus"]
+    },
+    {
+      "id": "pharma",
+      "name": "Pharma / Life Sciences",
+      "stage": "early-mid",
+      "stageSource": "industry-tam.md Table A — Healthcare / Life Sciences (combined card; pharma subset)",
+      "priority": 3,
+      "flagshipLogos": ["Novartis", "Parexel"]
+    },
+    {
+      "id": "airlines",
+      "name": "Airlines / Aviation",
+      "stage": "early-mid",
+      "stageSource": "industry-tam.md Table A — Aerospace / Aviation",
+      "priority": 4,
+      "flagshipLogos": ["American Airlines", "United Airlines"]
+    },
+    {
+      "id": "ai_infra",
+      "name": "AI infra / Semiconductors",
+      "stage": "early",
+      "stageSource": "No dedicated industry-tam row; NVIDIA AIPCon 11 is a new lighthouse — treat as Early pending more logos.",
+      "priority": 5,
+      "flagshipLogos": ["NVIDIA"]
+    },
+    {
+      "id": "defense",
+      "name": "Defense / Gov",
+      "stage": "mid",
+      "stageSource": "industry-tam.md Table A — Defense / Intel / NatSec",
+      "priority": 6,
+      "flagshipLogos": ["US Army (Maven)", "NATO", "US Navy (ShipOS)", "L3Harris"]
+    },
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing / Auto",
+      "stage": "early-mid",
+      "stageSource": "industry-tam.md Table A — Manufacturing / Industrial / Auto",
+      "priority": 7,
+      "flagshipLogos": ["Lear", "Stellantis", "HD Hyundai"]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare / Hospitals",
+      "stage": "early-mid",
+      "stageSource": "industry-tam.md Table A — Healthcare / Life Sciences",
+      "priority": 8,
+      "flagshipLogos": ["Nebraska Medicine", "Tampa General", "HSS", "Mount Sinai"]
+    },
+    {
+      "id": "fs",
+      "name": "Financial Services / Insurance",
+      "stage": "early",
+      "stageSource": "industry-tam.md Table A — Financial services / Insurance",
+      "priority": 9,
+      "flagshipLogos": ["SOMPO", "AIG", "Acrisure", "TWG Global", "Citi Wealth"]
+    }
+  ]
+}

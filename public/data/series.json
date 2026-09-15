@@ -1,0 +1,472 @@
+{
+  "asOf": "2026-09-15",
+  "disclaimer": "Every point is sourced from pltr-tracker research files. No invented values. Sparse series are intentional. Values > 0 for log-scale charts. insufficientForTrend=true when pointCount < 2.",
+  "series": [
+    {
+      "id": "pltr-total-revenue",
+      "industryId": "company",
+      "metric": "pltr_total_revenue_usd",
+      "unit": "usd",
+      "label": "PLTR total revenue (quarter)",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Only Q2 FY2026 explicitly stated as a quarterly print in earnings-baseline.md. H1 FY2026 $3.568B and FY2025 ~$4.48B appear elsewhere but are not additional quarter points.",
+      "points": [
+        {
+          "date": "2026-06-30",
+          "value": 1935464000,
+          "sourceType": "pltr_earnings",
+          "sourceRef": "Q2 FY2026 SEC EX-99.1 — total revenue $1,935,464k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "pltr-us-comm-revenue",
+      "industryId": "company",
+      "metric": "pltr_us_comm_revenue_usd",
+      "unit": "usd",
+      "label": "PLTR US commercial revenue (quarter)",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Only Q2 FY2026 US commercial $764M stated as a quarterly figure in earnings-baseline.md / deals-by-industry.md. FY2025 US commercial $1.47B (industry-tam) is annual, not quarterly.",
+      "points": [
+        {
+          "date": "2026-06-30",
+          "value": 764000000,
+          "sourceType": "pltr_earnings",
+          "sourceRef": "Q2 FY2026 SEC EX-99.1 — US commercial $764M",
+          "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
+          "confidence": "high"
+        }
+      ]
+    },
+
+    {
+      "id": "telecom-att-use-cases",
+      "industryId": "telecom",
+      "metric": "use_cases",
+      "unit": "count",
+      "label": "AT&T Foundry use cases / applications",
+      "insufficientForTrend": false,
+      "pointCount": 2,
+      "note": "AIPCon 5 spoken '580 use cases'; AIPCon 6 / palantir.com later quote '600+/660 applications' per att.md.",
+      "points": [
+        {
+          "date": "2024-09-15",
+          "value": 580,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 5 AT&T — Foundry for Enterprise (spoken 580 use cases)",
+          "url": "https://www.youtube.com/watch?v=jLYsw3z7IJA",
+          "confidence": "high"
+        },
+        {
+          "date": "2025-03-13",
+          "value": 660,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 / palantir.com Scout quote — 600+/660 applications (att.md context)",
+          "url": "https://www.youtube.com/watch?v=MjKhHS1w9FY",
+          "confidence": "med"
+        }
+      ]
+    },
+    {
+      "id": "telecom-att-users-monthly",
+      "industryId": "telecom",
+      "metric": "users_monthly",
+      "unit": "count",
+      "label": "AT&T Foundry monthly active users",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "AIPCon 5 and AIPCon 6 both cite 8,500 MAU — no trajectory change disclosed.",
+      "points": [
+        {
+          "date": "2024-09-15",
+          "value": 8500,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 5 AT&T — 8,500 monthly users",
+          "url": "https://www.youtube.com/watch?v=jLYsw3z7IJA",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "telecom-att-data-sources",
+      "industryId": "telecom",
+      "metric": "data_sources",
+      "unit": "count",
+      "label": "AT&T Foundry data sources",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "points": [
+        {
+          "date": "2024-09-15",
+          "value": 995,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 5 AT&T — 995 data sources (~almost a thousand)",
+          "url": "https://www.youtube.com/watch?v=jLYsw3z7IJA",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "telecom-att-users-cumulative",
+      "industryId": "telecom",
+      "metric": "users_cumulative",
+      "unit": "count",
+      "label": "AT&T Foundry cumulative users touched",
+      "insufficientForTrend": false,
+      "pointCount": 2,
+      "note": "AIPCon 5: 36,000 cumulative; AIPCon 6 context: ~39,000 people touched Foundry (att.md).",
+      "points": [
+        {
+          "date": "2024-09-15",
+          "value": 36000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 5 AT&T — 36,000 cumulative users since start",
+          "url": "https://www.youtube.com/watch?v=jLYsw3z7IJA",
+          "confidence": "high"
+        },
+        {
+          "date": "2025-03-13",
+          "value": 39000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 public quotes — ~39,000 people touched Foundry (att.md)",
+          "url": "https://www.youtube.com/watch?v=MjKhHS1w9FY",
+          "confidence": "med"
+        }
+      ]
+    },
+
+    {
+      "id": "energy-bp-equipment-thunder-horse",
+      "industryId": "energy",
+      "metric": "equipment_count",
+      "unit": "count",
+      "label": "bp Thunder Horse equipment pieces",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 60000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 bp — >60,000 pieces of equipment on Thunder Horse",
+          "url": "https://www.youtube.com/watch?v=1Wrhaur3ws0",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "energy-bp-simulations",
+      "industryId": "energy",
+      "metric": "simulations",
+      "unit": "count",
+      "label": "bp digital twin simulations (prior year)",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 1400000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 bp — >1.4 million digital twin simulations (last year)",
+          "url": "https://www.youtube.com/watch?v=1Wrhaur3ws0",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "energy-bp-equipment-global-agents",
+      "industryId": "energy",
+      "metric": "equipment_count",
+      "unit": "count",
+      "label": "bp equipment covered by scaled agent insights (global O&G)",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 1400000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 bp — ~1.4 million equipment pieces across global oil and gas assets",
+          "url": "https://www.youtube.com/watch?v=1Wrhaur3ws0",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "energy-bp-sensors",
+      "industryId": "energy",
+      "metric": "sensor_count",
+      "unit": "count",
+      "label": "bp Thunder Horse real-time sensors",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 40000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 bp — 40,000 real-time sensors",
+          "url": "https://www.youtube.com/watch?v=1Wrhaur3ws0",
+          "confidence": "high"
+        }
+      ]
+    },
+
+    {
+      "id": "pharma-novartis-patient-lives",
+      "industryId": "pharma",
+      "metric": "patient_lives",
+      "unit": "count",
+      "label": "Novartis Data42 real-world patient lives",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Platform scale metric (ontology data estate), not PLTR revenue. Prefer 700M over secondary ~70M (novartis.md).",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 700000000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 Novartis — >700 million real-world patient lives",
+          "url": "https://www.youtube.com/watch?v=dQ8KeyVmfUM",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "pharma-novartis-clinical-trials",
+      "industryId": "pharma",
+      "metric": "clinical_trials",
+      "unit": "count",
+      "label": "Novartis Data42 clinical trials integrated",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 3000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 Novartis — ~3,000 clinical trials",
+          "url": "https://www.youtube.com/watch?v=dQ8KeyVmfUM",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "pharma-novartis-trial-patients",
+      "industryId": "pharma",
+      "metric": "trial_patients",
+      "unit": "count",
+      "label": "Novartis Data42 trial patients",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 1000000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 Novartis — ~1 million trial patients",
+          "url": "https://www.youtube.com/watch?v=dQ8KeyVmfUM",
+          "confidence": "high"
+        }
+      ]
+    },
+
+    {
+      "id": "airlines-aa-flights-daily",
+      "industryId": "airlines",
+      "metric": "flights_daily",
+      "unit": "count",
+      "label": "American Airlines flights / day (ops scale context)",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Airline ops scale disclosed in AIPCon 8 talk — context for Vector platform, not a Foundry user/use-case count. Value unlocked stated only as 'tens of millions' USD — not a precise number, so no value_unlocked_usd series seeded.",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 6500,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 American Airlines — ~6,500 flights/day",
+          "url": "https://www.youtube.com/watch?v=DLx3ix6c0Oo",
+          "confidence": "high"
+        }
+      ]
+    },
+
+    {
+      "id": "ai_infra-nvidia-allocation-accuracy",
+      "industryId": "ai_infra",
+      "metric": "model_accuracy_pct",
+      "unit": "percent",
+      "label": "NVIDIA fine-tuned Nemotron allocation-task accuracy %",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Non-penetration capability metric (narrow CMA task accuracy). Included as optional reference; not a trajectory of industry penetration. No Foundry user/use-case/$ disclosed.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 86.7,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 NVIDIA — 86.7% fine-tuned Lightning vs 55.5% Ultra on allocation task (The New Stack / NVIDIA blog)",
+          "url": "https://www.youtube.com/watch?v=xZBaOenSZ9I",
+          "confidence": "high"
+        }
+      ]
+    },
+
+    {
+      "id": "defense-maven-builders",
+      "industryId": "defense",
+      "metric": "builders",
+      "unit": "count",
+      "label": "Maven Smart System builders on platform",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Only explicit platform-adoption number in research files for defense. Contract ceilings ($480M / ~$1.3B / $10B EA) are caps, not penetration trajectories — excluded.",
+      "points": [
+        {
+          "date": "2026-06-30",
+          "value": 25000,
+          "sourceType": "pltr_earnings",
+          "sourceRef": "Q2 FY2026 call — Maven >25,000 builders on platform",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/08/10/palantir-pltr-q2-2026-earnings-call-transcript/",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "defense-us-gov-revenue",
+      "industryId": "defense",
+      "metric": "pltr_us_gov_revenue_usd",
+      "unit": "usd",
+      "label": "PLTR US government revenue (quarter) — defense+civil mix",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Company segment, not pure defense industry mix (includes civil). Included as the closest disclosed $ proxy. insufficientForTrend until more quarters appended.",
+      "points": [
+        {
+          "date": "2026-06-30",
+          "value": 809000000,
+          "sourceType": "pltr_earnings",
+          "sourceRef": "Q2 FY2026 SEC EX-99.1 — US government $809M",
+          "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
+          "confidence": "high"
+        }
+      ]
+    },
+
+    {
+      "id": "manufacturing-lear-users",
+      "industryId": "manufacturing",
+      "metric": "users",
+      "unit": "count",
+      "label": "Lear Foundry/AIP users",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Explicit user count from Lear 5-year expansion press (deals-by-industry.md). Stellantis/HD Hyundai deal $ undisclosed — no additional numeric points.",
+      "points": [
+        {
+          "date": "2025-09-04",
+          "value": 11000,
+          "sourceType": "press",
+          "sourceRef": "Lear BW 2025-09-04 — >11,000 users; 5-year Foundry/Warp Speed/AIP expansion",
+          "url": "https://www.businesswire.com/news/home/20250904889554/en/Palantir-and-Lear-Announce-Five-Year-Partnership-Expansion-to-Accelerate-Automotive-Technology-Transformation",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "manufacturing-lear-plants",
+      "industryId": "manufacturing",
+      "metric": "sites",
+      "unit": "count",
+      "label": "Lear plants on JIT control tower",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "From aipcon-presentations.md signal tier (Lear AIPCon 5/8 — JIT for 175+ plants).",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 175,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 Lear — JIT control tower for 175+ plants (aipcon-presentations.md)",
+          "url": "https://www.youtube.com/watch?v=-DPdyQR1bG4",
+          "confidence": "med"
+        }
+      ]
+    },
+
+    {
+      "id": "healthcare-nebraska-use-cases",
+      "industryId": "healthcare",
+      "metric": "use_cases",
+      "unit": "count",
+      "label": "Nebraska Medicine use cases",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "From aipcon-presentations.md / AIPCon 8 blog signal — 20+ use cases. Hospital deal dollars mostly undisclosed; $37M nonprofit health TCV is anonymized booking example, not attributed to a named logo trajectory.",
+      "points": [
+        {
+          "date": "2025-06-01",
+          "value": 20,
+          "sourceType": "aipcon",
+          "sourceRef": "Nebraska Medicine AIPCon 7 + AIPCon 8 blog — 20+ use cases; enterprise in ~6 months from Jan 2024 start",
+          "url": "https://www.youtube.com/watch?v=VM2XylCVYXI",
+          "confidence": "med"
+        }
+      ]
+    },
+    {
+      "id": "healthcare-hss-appeals-monthly",
+      "industryId": "healthcare",
+      "metric": "appeals_monthly",
+      "unit": "count",
+      "label": "HSS denial appeals processed / month",
+      "insufficientForTrend": false,
+      "pointCount": 2,
+      "note": "Before→after from aipcon-presentations.md HSS signal (100→1,000/mo). Dates approximate: pre-platform baseline vs AIPCon 8 production claim.",
+      "points": [
+        {
+          "date": "2024-09-01",
+          "value": 100,
+          "sourceType": "aipcon",
+          "sourceRef": "HSS AIPCon 8 — appeals 100→1,000/mo (pre baseline cited in talk/blog)",
+          "url": "https://www.youtube.com/watch?v=mKp3TTggihU",
+          "confidence": "med"
+        },
+        {
+          "date": "2025-09-08",
+          "value": 1000,
+          "sourceType": "aipcon",
+          "sourceRef": "HSS AIPCon 8 — appeals 1,000/mo production (aipcon-presentations.md)",
+          "url": "https://www.youtube.com/watch?v=mKp3TTggihU",
+          "confidence": "med"
+        }
+      ]
+    },
+
+    {
+      "id": "fs-sompo-users",
+      "industryId": "fs",
+      "metric": "users",
+      "unit": "count",
+      "label": "SOMPO Foundry/AIP users",
+      "insufficientForTrend": true,
+      "pointCount": 1,
+      "note": "Explicit user count from SOMPO expansion press (deals-by-industry.md). TWG/AIG/Acrisure lack disclosed user or use-case counts in research files.",
+      "points": [
+        {
+          "date": "2025-08-12",
+          "value": 8000,
+          "sourceType": "press",
+          "sourceRef": "SOMPO BW 2025-08-12 — 8,000+ users; multi-year expansion (second after $50M in 2023)",
+          "url": "https://www.businesswire.com/news/home/20250812905441/en/Palantir-and-SOMPO-Expand-Partnership-in-Multi-Year-Agreement",
+          "confidence": "high"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+/* Global resets live in App.css; keep entry import for Vite scaffold. */
+html,
+body,
+#root {
+  min-height: 100%;
+}
