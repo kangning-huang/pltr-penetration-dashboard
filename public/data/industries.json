@@ -6,80 +6,126 @@
       "id": "company",
       "name": "Company (reference)",
       "stage": null,
-      "stageNote": "Not an industry vertical — PLTR consolidated / US commercial reference series from earnings.",
+      "stageNote": "Not an industry vertical \u2014 PLTR consolidated / US commercial reference series from earnings.",
       "priority": 0
     },
     {
       "id": "telecom",
       "name": "Telecom",
       "stage": "early",
-      "stageSource": "industry-tam.md Table A — Telecommunications",
+      "stageSource": "industry-tam.md Table A \u2014 Telecommunications",
       "priority": 1,
-      "flagshipLogos": ["AT&T", "Lumen"]
+      "flagshipLogos": [
+        "AT&T",
+        "Lumen"
+      ]
     },
     {
       "id": "energy",
       "name": "Energy / Oil & Gas",
       "stage": "early-mid",
-      "stageSource": "industry-tam.md Table A — Energy / Utilities / O&G",
+      "stageSource": "industry-tam.md Table A \u2014 Energy / Utilities / O&G",
       "priority": 2,
-      "flagshipLogos": ["bp", "APA", "Rio Tinto", "Centrus"]
+      "flagshipLogos": [
+        "bp",
+        "APA",
+        "Rio Tinto",
+        "Centrus"
+      ]
     },
     {
       "id": "pharma",
       "name": "Pharma / Life Sciences",
       "stage": "early-mid",
-      "stageSource": "industry-tam.md Table A — Healthcare / Life Sciences (combined card; pharma subset)",
+      "stageSource": "industry-tam.md Table A \u2014 Healthcare / Life Sciences (combined card; pharma subset)",
       "priority": 3,
-      "flagshipLogos": ["Novartis", "Parexel"]
+      "flagshipLogos": [
+        "Novartis",
+        "Parexel"
+      ]
     },
     {
       "id": "airlines",
       "name": "Airlines / Aviation",
       "stage": "early-mid",
-      "stageSource": "industry-tam.md Table A — Aerospace / Aviation",
+      "stageSource": "industry-tam.md Table A \u2014 Aerospace / Aviation",
       "priority": 4,
-      "flagshipLogos": ["American Airlines", "United Airlines"]
+      "flagshipLogos": [
+        "American Airlines",
+        "United Airlines",
+        "Hertz"
+      ]
     },
     {
       "id": "ai_infra",
       "name": "AI infra / Semiconductors",
       "stage": "early",
-      "stageSource": "No dedicated industry-tam row; NVIDIA AIPCon 11 is a new lighthouse — treat as Early pending more logos.",
+      "stageSource": "No dedicated industry-tam row; NVIDIA AIPCon 11 is a new lighthouse \u2014 treat as Early pending more logos.",
       "priority": 5,
-      "flagshipLogos": ["NVIDIA"]
+      "flagshipLogos": [
+        "NVIDIA"
+      ]
     },
     {
       "id": "defense",
       "name": "Defense / Gov",
       "stage": "mid",
-      "stageSource": "industry-tam.md Table A — Defense / Intel / NatSec",
+      "stageSource": "industry-tam.md Table A \u2014 Defense / Intel / NatSec",
       "priority": 6,
-      "flagshipLogos": ["US Army (Maven)", "NATO", "US Navy (ShipOS)", "L3Harris"]
+      "flagshipLogos": [
+        "US Army (Maven)",
+        "NATO",
+        "US Navy (ShipOS)",
+        "L3Harris",
+        "Elmet Group"
+      ]
     },
     {
       "id": "manufacturing",
       "name": "Manufacturing / Auto",
       "stage": "early-mid",
-      "stageSource": "industry-tam.md Table A — Manufacturing / Industrial / Auto",
+      "stageSource": "industry-tam.md Table A \u2014 Manufacturing / Industrial / Auto",
       "priority": 7,
-      "flagshipLogos": ["Lear", "Stellantis", "HD Hyundai"]
+      "flagshipLogos": [
+        "Lear",
+        "Stellantis",
+        "HD Hyundai",
+        "Fujitsu",
+        "Ursa Major",
+        "Parts Town",
+        "McCarthy",
+        "General Mills",
+        "Wendy's QSCC",
+        "Heineken"
+      ]
     },
     {
       "id": "healthcare",
       "name": "Healthcare / Hospitals",
       "stage": "early-mid",
-      "stageSource": "industry-tam.md Table A — Healthcare / Life Sciences",
+      "stageSource": "industry-tam.md Table A \u2014 Healthcare / Life Sciences",
       "priority": 8,
-      "flagshipLogos": ["Nebraska Medicine", "Tampa General", "HSS", "Mount Sinai"]
+      "flagshipLogos": [
+        "Nebraska Medicine",
+        "Tampa General",
+        "HSS",
+        "Mount Sinai",
+        "Walgreens"
+      ]
     },
     {
       "id": "fs",
       "name": "Financial Services / Insurance",
       "stage": "early",
-      "stageSource": "industry-tam.md Table A — Financial services / Insurance",
+      "stageSource": "industry-tam.md Table A \u2014 Financial services / Insurance",
       "priority": 9,
-      "flagshipLogos": ["SOMPO", "AIG", "Acrisure", "TWG Global", "Citi Wealth"]
+      "flagshipLogos": [
+        "SOMPO",
+        "AIG",
+        "Acrisure",
+        "TWG Global",
+        "Citi Wealth"
+      ]
     }
   ]
 }

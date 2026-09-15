@@ -1,6 +1,6 @@
 {
   "asOf": "2026-09-15",
-  "disclaimer": "Every point is sourced from pltr-tracker research files. No invented values. Sparse series are intentional. Values > 0 for log-scale charts. insufficientForTrend=true when pointCount < 2.",
+  "disclaimer": "Every point is sourced from pltr-tracker research files, AIPCon captions/transcripts, Palantir blogs, or named press. No invented values. Sparse series are intentional. Values > 0 for log-scale charts. insufficientForTrend=true when pointCount < 2 (exception: flat same-value continuity may remain insufficientForTrend).",
   "series": [
     {
       "id": "pltr-total-revenue",
@@ -16,7 +16,7 @@
           "date": "2026-06-30",
           "value": 1935464000,
           "sourceType": "pltr_earnings",
-          "sourceRef": "Q2 FY2026 SEC EX-99.1 — total revenue $1,935,464k",
+          "sourceRef": "Q2 FY2026 SEC EX-99.1 \u2014 total revenue $1,935,464k",
           "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
           "confidence": "high"
         }
@@ -36,13 +36,12 @@
           "date": "2026-06-30",
           "value": 764000000,
           "sourceType": "pltr_earnings",
-          "sourceRef": "Q2 FY2026 SEC EX-99.1 — US commercial $764M",
+          "sourceRef": "Q2 FY2026 SEC EX-99.1 \u2014 US commercial $764M",
           "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
           "confidence": "high"
         }
       ]
     },
-
     {
       "id": "telecom-att-use-cases",
       "industryId": "telecom",
@@ -57,7 +56,7 @@
           "date": "2024-09-15",
           "value": 580,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 5 AT&T — Foundry for Enterprise (spoken 580 use cases)",
+          "sourceRef": "AIPCon 5 AT&T \u2014 Foundry for Enterprise (spoken 580 use cases)",
           "url": "https://www.youtube.com/watch?v=jLYsw3z7IJA",
           "confidence": "high"
         },
@@ -65,9 +64,9 @@
           "date": "2025-03-13",
           "value": 660,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 6 / palantir.com Scout quote — 600+/660 applications (att.md context)",
+          "sourceRef": "AIPCon 6 AT&T \u2014 spoken 'over 600 different use cases' / '660 plus applications' (captions)",
           "url": "https://www.youtube.com/watch?v=MjKhHS1w9FY",
-          "confidence": "med"
+          "confidence": "high"
         }
       ]
     },
@@ -78,15 +77,23 @@
       "unit": "count",
       "label": "AT&T Foundry monthly active users",
       "insufficientForTrend": true,
-      "pointCount": 1,
-      "note": "AIPCon 5 and AIPCon 6 both cite 8,500 MAU — no trajectory change disclosed.",
+      "pointCount": 2,
+      "note": "AIPCon 5 and AIPCon 6 both cite 8,500 MAU \u2014 no trajectory change disclosed; second point confirms continuity.",
       "points": [
         {
           "date": "2024-09-15",
           "value": 8500,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 5 AT&T — 8,500 monthly users",
+          "sourceRef": "AIPCon 5 AT&T \u2014 8,500 monthly users",
           "url": "https://www.youtube.com/watch?v=jLYsw3z7IJA",
+          "confidence": "high"
+        },
+        {
+          "date": "2025-03-13",
+          "value": 8500,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 AT&T \u2014 Connectivity To Depend On (spoken 8,500 MAU; same level as AIPCon 5)",
+          "url": "https://www.youtube.com/watch?v=MjKhHS1w9FY",
           "confidence": "high"
         }
       ]
@@ -104,7 +111,7 @@
           "date": "2024-09-15",
           "value": 995,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 5 AT&T — 995 data sources (~almost a thousand)",
+          "sourceRef": "AIPCon 5 AT&T \u2014 995 data sources (~almost a thousand)",
           "url": "https://www.youtube.com/watch?v=jLYsw3z7IJA",
           "confidence": "high"
         }
@@ -124,7 +131,7 @@
           "date": "2024-09-15",
           "value": 36000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 5 AT&T — 36,000 cumulative users since start",
+          "sourceRef": "AIPCon 5 AT&T \u2014 36,000 cumulative users since start",
           "url": "https://www.youtube.com/watch?v=jLYsw3z7IJA",
           "confidence": "high"
         },
@@ -132,13 +139,12 @@
           "date": "2025-03-13",
           "value": 39000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 6 public quotes — ~39,000 people touched Foundry (att.md)",
+          "sourceRef": "AIPCon 6 AT&T \u2014 spoken 'over 39,000 people at AT&T having touched Foundry' (captions)",
           "url": "https://www.youtube.com/watch?v=MjKhHS1w9FY",
-          "confidence": "med"
+          "confidence": "high"
         }
       ]
     },
-
     {
       "id": "energy-bp-equipment-thunder-horse",
       "industryId": "energy",
@@ -152,7 +158,7 @@
           "date": "2025-09-08",
           "value": 60000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 bp — >60,000 pieces of equipment on Thunder Horse",
+          "sourceRef": "AIPCon 8 bp \u2014 >60,000 pieces of equipment on Thunder Horse",
           "url": "https://www.youtube.com/watch?v=1Wrhaur3ws0",
           "confidence": "high"
         }
@@ -171,7 +177,7 @@
           "date": "2025-09-08",
           "value": 1400000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 bp — >1.4 million digital twin simulations (last year)",
+          "sourceRef": "AIPCon 8 bp \u2014 >1.4 million digital twin simulations (last year)",
           "url": "https://www.youtube.com/watch?v=1Wrhaur3ws0",
           "confidence": "high"
         }
@@ -190,7 +196,7 @@
           "date": "2025-09-08",
           "value": 1400000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 bp — ~1.4 million equipment pieces across global oil and gas assets",
+          "sourceRef": "AIPCon 8 bp \u2014 ~1.4 million equipment pieces across global oil and gas assets",
           "url": "https://www.youtube.com/watch?v=1Wrhaur3ws0",
           "confidence": "high"
         }
@@ -209,13 +215,12 @@
           "date": "2025-09-08",
           "value": 40000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 bp — 40,000 real-time sensors",
+          "sourceRef": "AIPCon 8 bp \u2014 40,000 real-time sensors",
           "url": "https://www.youtube.com/watch?v=1Wrhaur3ws0",
           "confidence": "high"
         }
       ]
     },
-
     {
       "id": "pharma-novartis-patient-lives",
       "industryId": "pharma",
@@ -230,7 +235,7 @@
           "date": "2025-09-08",
           "value": 700000000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 Novartis — >700 million real-world patient lives",
+          "sourceRef": "AIPCon 8 Novartis \u2014 >700 million real-world patient lives",
           "url": "https://www.youtube.com/watch?v=dQ8KeyVmfUM",
           "confidence": "high"
         }
@@ -249,7 +254,7 @@
           "date": "2025-09-08",
           "value": 3000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 Novartis — ~3,000 clinical trials",
+          "sourceRef": "AIPCon 8 Novartis \u2014 ~3,000 clinical trials",
           "url": "https://www.youtube.com/watch?v=dQ8KeyVmfUM",
           "confidence": "high"
         }
@@ -268,13 +273,12 @@
           "date": "2025-09-08",
           "value": 1000000,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 Novartis — ~1 million trial patients",
+          "sourceRef": "AIPCon 8 Novartis \u2014 ~1 million trial patients",
           "url": "https://www.youtube.com/watch?v=dQ8KeyVmfUM",
           "confidence": "high"
         }
       ]
     },
-
     {
       "id": "airlines-aa-flights-daily",
       "industryId": "airlines",
@@ -283,19 +287,18 @@
       "label": "American Airlines flights / day (ops scale context)",
       "insufficientForTrend": true,
       "pointCount": 1,
-      "note": "Airline ops scale disclosed in AIPCon 8 talk — context for Vector platform, not a Foundry user/use-case count. Value unlocked stated only as 'tens of millions' USD — not a precise number, so no value_unlocked_usd series seeded.",
+      "note": "Airline ops scale disclosed in AIPCon 8 talk \u2014 context for Vector platform, not a Foundry user/use-case count. Value unlocked stated only as 'tens of millions' USD \u2014 not a precise number, so no value_unlocked_usd series seeded.",
       "points": [
         {
           "date": "2025-09-08",
           "value": 6500,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 American Airlines — ~6,500 flights/day",
+          "sourceRef": "AIPCon 8 American Airlines \u2014 ~6,500 flights/day",
           "url": "https://www.youtube.com/watch?v=DLx3ix6c0Oo",
           "confidence": "high"
         }
       ]
     },
-
     {
       "id": "ai_infra-nvidia-allocation-accuracy",
       "industryId": "ai_infra",
@@ -310,13 +313,12 @@
           "date": "2026-09-10",
           "value": 86.7,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 11 NVIDIA — 86.7% fine-tuned Lightning vs 55.5% Ultra on allocation task (The New Stack / NVIDIA blog)",
+          "sourceRef": "AIPCon 11 NVIDIA \u2014 86.7% fine-tuned Lightning vs 55.5% Ultra on allocation task (The New Stack / NVIDIA blog)",
           "url": "https://www.youtube.com/watch?v=xZBaOenSZ9I",
           "confidence": "high"
         }
       ]
     },
-
     {
       "id": "defense-maven-builders",
       "industryId": "defense",
@@ -325,13 +327,13 @@
       "label": "Maven Smart System builders on platform",
       "insufficientForTrend": true,
       "pointCount": 1,
-      "note": "Only explicit platform-adoption number in research files for defense. Contract ceilings ($480M / ~$1.3B / $10B EA) are caps, not penetration trajectories — excluded.",
+      "note": "Only explicit platform-adoption number in research files for defense. Contract ceilings ($480M / ~$1.3B / $10B EA) are caps, not penetration trajectories \u2014 excluded.",
       "points": [
         {
           "date": "2026-06-30",
           "value": 25000,
           "sourceType": "pltr_earnings",
-          "sourceRef": "Q2 FY2026 call — Maven >25,000 builders on platform",
+          "sourceRef": "Q2 FY2026 call \u2014 Maven >25,000 builders on platform",
           "url": "https://www.fool.com/earnings/call-transcripts/2026/08/10/palantir-pltr-q2-2026-earnings-call-transcript/",
           "confidence": "high"
         }
@@ -342,7 +344,7 @@
       "industryId": "defense",
       "metric": "pltr_us_gov_revenue_usd",
       "unit": "usd",
-      "label": "PLTR US government revenue (quarter) — defense+civil mix",
+      "label": "PLTR US government revenue (quarter) \u2014 defense+civil mix",
       "insufficientForTrend": true,
       "pointCount": 1,
       "note": "Company segment, not pure defense industry mix (includes civil). Included as the closest disclosed $ proxy. insufficientForTrend until more quarters appended.",
@@ -351,13 +353,12 @@
           "date": "2026-06-30",
           "value": 809000000,
           "sourceType": "pltr_earnings",
-          "sourceRef": "Q2 FY2026 SEC EX-99.1 — US government $809M",
+          "sourceRef": "Q2 FY2026 SEC EX-99.1 \u2014 US government $809M",
           "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm",
           "confidence": "high"
         }
       ]
     },
-
     {
       "id": "manufacturing-lear-users",
       "industryId": "manufacturing",
@@ -366,13 +367,13 @@
       "label": "Lear Foundry/AIP users",
       "insufficientForTrend": true,
       "pointCount": 1,
-      "note": "Explicit user count from Lear 5-year expansion press (deals-by-industry.md). Stellantis/HD Hyundai deal $ undisclosed — no additional numeric points.",
+      "note": "Explicit user count from Lear 5-year expansion press (deals-by-industry.md). Stellantis/HD Hyundai deal $ undisclosed \u2014 no additional numeric points.",
       "points": [
         {
           "date": "2025-09-04",
           "value": 11000,
           "sourceType": "press",
-          "sourceRef": "Lear BW 2025-09-04 — >11,000 users; 5-year Foundry/Warp Speed/AIP expansion",
+          "sourceRef": "Lear BW 2025-09-04 \u2014 >11,000 users; 5-year Foundry/Warp Speed/AIP expansion",
           "url": "https://www.businesswire.com/news/home/20250904889554/en/Palantir-and-Lear-Announce-Five-Year-Partnership-Expansion-to-Accelerate-Automotive-Technology-Transformation",
           "confidence": "high"
         }
@@ -386,19 +387,18 @@
       "label": "Lear plants on JIT control tower",
       "insufficientForTrend": true,
       "pointCount": 1,
-      "note": "From aipcon-presentations.md signal tier (Lear AIPCon 5/8 — JIT for 175+ plants).",
+      "note": "From aipcon-presentations.md signal tier (Lear AIPCon 5/8 \u2014 JIT for 175+ plants).",
       "points": [
         {
           "date": "2025-09-08",
           "value": 175,
           "sourceType": "aipcon",
-          "sourceRef": "AIPCon 8 Lear — JIT control tower for 175+ plants (aipcon-presentations.md)",
+          "sourceRef": "AIPCon 8 Lear \u2014 AIP for Just-in-Time Production (spoken 'over 175 just in time plants')",
           "url": "https://www.youtube.com/watch?v=-DPdyQR1bG4",
-          "confidence": "med"
+          "confidence": "high"
         }
       ]
     },
-
     {
       "id": "healthcare-nebraska-use-cases",
       "industryId": "healthcare",
@@ -407,13 +407,13 @@
       "label": "Nebraska Medicine use cases",
       "insufficientForTrend": true,
       "pointCount": 1,
-      "note": "From aipcon-presentations.md / AIPCon 8 blog signal — 20+ use cases. Hospital deal dollars mostly undisclosed; $37M nonprofit health TCV is anonymized booking example, not attributed to a named logo trajectory.",
+      "note": "From aipcon-presentations.md / AIPCon 8 blog signal \u2014 20+ use cases. Hospital deal dollars mostly undisclosed; $37M nonprofit health TCV is anonymized booking example, not attributed to a named logo trajectory.",
       "points": [
         {
           "date": "2025-06-01",
           "value": 20,
           "sourceType": "aipcon",
-          "sourceRef": "Nebraska Medicine AIPCon 7 + AIPCon 8 blog — 20+ use cases; enterprise in ~6 months from Jan 2024 start",
+          "sourceRef": "Nebraska Medicine AIPCon 7 + AIPCon 8 blog \u2014 20+ use cases; enterprise in ~6 months from Jan 2024 start",
           "url": "https://www.youtube.com/watch?v=VM2XylCVYXI",
           "confidence": "med"
         }
@@ -427,13 +427,13 @@
       "label": "HSS denial appeals processed / month",
       "insufficientForTrend": false,
       "pointCount": 2,
-      "note": "Before→after from aipcon-presentations.md HSS signal (100→1,000/mo). Dates approximate: pre-platform baseline vs AIPCon 8 production claim.",
+      "note": "Before\u2192after from aipcon-presentations.md HSS signal (100\u21921,000/mo). Dates approximate: pre-platform baseline vs AIPCon 8 production claim.",
       "points": [
         {
           "date": "2024-09-01",
           "value": 100,
           "sourceType": "aipcon",
-          "sourceRef": "HSS AIPCon 8 — appeals 100→1,000/mo (pre baseline cited in talk/blog)",
+          "sourceRef": "HSS AIPCon 8 \u2014 appeals 100\u21921,000/mo (pre baseline cited in talk/blog)",
           "url": "https://www.youtube.com/watch?v=mKp3TTggihU",
           "confidence": "med"
         },
@@ -441,13 +441,12 @@
           "date": "2025-09-08",
           "value": 1000,
           "sourceType": "aipcon",
-          "sourceRef": "HSS AIPCon 8 — appeals 1,000/mo production (aipcon-presentations.md)",
+          "sourceRef": "HSS AIPCon 8 \u2014 appeals 1,000/mo production (aipcon-presentations.md)",
           "url": "https://www.youtube.com/watch?v=mKp3TTggihU",
           "confidence": "med"
         }
       ]
     },
-
     {
       "id": "fs-sompo-users",
       "industryId": "fs",
@@ -462,11 +461,911 @@
           "date": "2025-08-12",
           "value": 8000,
           "sourceType": "press",
-          "sourceRef": "SOMPO BW 2025-08-12 — 8,000+ users; multi-year expansion (second after $50M in 2023)",
+          "sourceRef": "SOMPO BW 2025-08-12 \u2014 8,000+ users; multi-year expansion (second after $50M in 2023)",
           "url": "https://www.businesswire.com/news/home/20250812905441/en/Palantir-and-SOMPO-Expand-Partnership-in-Multi-Year-Agreement",
           "confidence": "high"
         }
       ]
+    },
+    {
+      "id": "telecom-att-engineers",
+      "industryId": "telecom",
+      "metric": "builders",
+      "unit": "count",
+      "label": "AT&T dedicated Foundry/AIP engineers",
+      "note": "Floor value from \"over 100\"; platform builder capacity proxy.",
+      "points": [
+        {
+          "date": "2025-03-13",
+          "value": 100,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 AT&T \u2014 spoken 'over 100 AT&T dedicated engineers' supporting Scout/Foundry apps",
+          "url": "https://www.youtube.com/watch?v=MjKhHS1w9FY",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "telecom-lumen-data-sources",
+      "industryId": "telecom",
+      "metric": "data_sources",
+      "unit": "count",
+      "label": "Lumen enterprise product data sources",
+      "note": "Single talk snapshot; lower scale than AT&T but named second telecom logo.",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 36,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 Lumen \u2014 spoken '~36 different data sources' for enterprise product journey",
+          "url": "https://www.youtube.com/watch?v=3c4ekdck0kg",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "energy-centrus-savings-usd",
+      "industryId": "energy",
+      "metric": "value_unlocked_usd",
+      "unit": "usd",
+      "label": "Centrus identified operational savings (USD)",
+      "note": "Customer-identified savings claim contemporaneous with AIPCon 9 Centrus talk; not contract value.",
+      "points": [
+        {
+          "date": "2026-03-12",
+          "value": 300000000,
+          "sourceType": "press",
+          "sourceRef": "Centrus\u2013Palantir partnership (AIPCon 9 speaker) \u2014 Centrus cites nearly $300M in identified savings (customer ROI claim, not PLTR contract)",
+          "url": "https://www.centrusenergy.com/news/centrus-partners-with-palantir-to-drive-cost-savings-and-unlock-operational-efficiencies-in-major-expansion-of-u-s-uranium-enrichment-capacity/",
+          "confidence": "med"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "pharma-novartis-dose-prediction-hours",
+      "industryId": "pharma",
+      "metric": "cycle_time_hours",
+      "unit": "hours",
+      "label": "Novartis Closing the Loop dose-prediction cycle time (hours)",
+      "note": "Production outcome metric. Pre-state ~1 week (~168h) cited in talk; only post value seeded as precise spoken number (2 hours).",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 2,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 Novartis \u2014 Closing the Loop dose prediction ~1 week \u2192 ~2 hours (~90\u201398% cut)",
+          "url": "https://www.youtube.com/watch?v=dQ8KeyVmfUM",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "pharma-parexel-submission-weeks",
+      "industryId": "pharma",
+      "metric": "cycle_time_weeks",
+      "unit": "weeks",
+      "label": "Parexel time to submission-ready materials (weeks)",
+      "note": "Before/after from AIPCon 6 talk. Baseline spoken as 10\u201312 weeks; target ~3\u20134 weeks (>50% cut). Dates approximate: pre vs AIPCon 6 claim.",
+      "points": [
+        {
+          "date": "2025-01-01",
+          "value": 11,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 Parexel \u2014 baseline 10\u201312 week average to submission-ready materials (midpoint 11)",
+          "url": "https://www.youtube.com/watch?v=o2Zah7NPGI4",
+          "confidence": "med"
+        },
+        {
+          "date": "2025-03-13",
+          "value": 3.5,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 Parexel \u2014 estimated reduction to ~3\u20134 weeks (midpoint 3.5)",
+          "url": "https://www.youtube.com/watch?v=o2Zah7NPGI4",
+          "confidence": "med"
+        }
+      ],
+      "pointCount": 2,
+      "insufficientForTrend": false
+    },
+    {
+      "id": "airlines-hertz-fleet-vehicles",
+      "industryId": "airlines",
+      "metric": "fleet_vehicles",
+      "unit": "count",
+      "label": "Hertz fleet vehicles (Fleet OS scale context)",
+      "note": "Mobility/rental placed under Airlines/Aviation travel ops for dashboard continuity. Fleet scale context for Fleet OS; not Foundry user count.",
+      "points": [
+        {
+          "date": "2025-06-01",
+          "value": 500000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 7 Hertz \u2014 Fleet OS talk (spoken 'more than half a million vehicles' / >11,000 locations / 160 countries)",
+          "url": "https://www.youtube.com/watch?v=RRmIxjErmCI",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "airlines-hertz-locations",
+      "industryId": "airlines",
+      "metric": "sites",
+      "unit": "count",
+      "label": "Hertz rental locations",
+      "note": "Site footprint for Fleet OS orchestration.",
+      "points": [
+        {
+          "date": "2025-06-01",
+          "value": 11000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 7 Hertz \u2014 spoken 'more than 11,000 locations' across 160 countries",
+          "url": "https://www.youtube.com/watch?v=RRmIxjErmCI",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "airlines-united-customers-saved",
+      "industryId": "airlines",
+      "metric": "passengers_impacted",
+      "unit": "count",
+      "label": "United customers saved from delay/cancel (cumulative)",
+      "note": "Passenger-impact outcome tied to predictive maintenance.",
+      "points": [
+        {
+          "date": "2024-06-06",
+          "value": 100000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 4 United \u2014 spoken 'saved over 100,000 customers from delays and cancellations'",
+          "url": "https://www.youtube.com/watch?v=51OH0x8ZPYQ",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "airlines-united-delays-avoided",
+      "industryId": "airlines",
+      "metric": "delays_avoided",
+      "unit": "count",
+      "label": "United Airlines delays avoided (cumulative at talk)",
+      "note": "Cumulative ops outcome at AIPCon 4; not a recurring rate.",
+      "points": [
+        {
+          "date": "2024-06-06",
+          "value": 300,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 4 United \u2014 spoken 'almost 300 delays' and '20 cancellations' avoided; 'over 100,000 customers' saved",
+          "url": "https://www.youtube.com/watch?v=51OH0x8ZPYQ",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "airlines-united-flights-daily",
+      "industryId": "airlines",
+      "metric": "flights_daily",
+      "unit": "count",
+      "label": "United Airlines flights / day (ops scale context)",
+      "note": "Ops scale for predictive maintenance / Wi-Fi heartbeat use case.",
+      "points": [
+        {
+          "date": "2024-06-06",
+          "value": 2600,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 4 United Airlines \u2014 The Future of Aircraft Maintenance (spoken 2,600 flights/day Wi-Fi heartbeat context)",
+          "url": "https://www.youtube.com/watch?v=51OH0x8ZPYQ",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "ai_infra-nvidia-parts-per-rack",
+      "industryId": "ai_infra",
+      "metric": "parts_count",
+      "unit": "count",
+      "label": "NVIDIA Vera Rubin rack parts count (supply-chain scale)",
+      "note": "Complexity proxy for Command Center CMA problem; not user/use-case penetration.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 1300000,
+          "sourceType": "press",
+          "sourceRef": "AIPCon 11 / NVIDIA\u2013Palantir BW \u2014 1.3 million parts per Vera Rubin rack (supply-chain complexity context)",
+          "url": "https://www.morningstar.com/news/business-wire/20260910834032/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "defense-elmet-apps",
+      "industryId": "defense",
+      "metric": "applications",
+      "unit": "count",
+      "label": "Elmet Group Foundry/AIP applications deployed",
+      "note": "From AIPCon 11 transcript dialogue. SMB/critical-materials Warp Speed velocity.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 10,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 The Elmet Group \u2014 10 applications rolled out across 2 divisions in ~2 months; contract in 2 weeks (Warp Speed)",
+          "url": "https://www.youtube.com/watch?v=4j8qdjGd6cA",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "defense-elmet-defense-programs",
+      "industryId": "defense",
+      "metric": "programs",
+      "unit": "count",
+      "label": "Elmet defense programs supported",
+      "note": "Customer program footprint context for Warp Speed critical materials.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 125,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 The Elmet Group \u2014 supports >125 defense programs (+ ~90 DOE projects)",
+          "url": "https://www.youtube.com/watch?v=4j8qdjGd6cA",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "defense-l3harris-data-connections",
+      "industryId": "defense",
+      "metric": "data_connections",
+      "unit": "count",
+      "label": "L3Harris UDL data connections",
+      "note": "Ontology connection scale across enterprise systems.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 3500000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 L3Harris \u2014 spoken '3.5 million data connections' for near real-time insights",
+          "url": "https://www.youtube.com/watch?v=MvYs6UHy5Jg",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "defense-l3harris-data-feeds",
+      "industryId": "defense",
+      "metric": "data_feeds",
+      "unit": "count",
+      "label": "L3Harris scheduled data feeds into Foundry",
+      "note": "Platform data-ingestion scale.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 5000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 L3Harris \u2014 spoken 'more than 5,000 scheduled data feeds' into Foundry UDL",
+          "url": "https://www.youtube.com/watch?v=MvYs6UHy5Jg",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "defense-l3harris-erps",
+      "industryId": "defense",
+      "metric": "systems_integrated",
+      "unit": "count",
+      "label": "L3Harris ERPs in unified data layer",
+      "note": "From AIPCon 11 transcript (no YT captions). Enterprise OS breadth proxy.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 33,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 L3Harris \u2014 enterprise UDL pulling together 33 ERPs (transcript)",
+          "url": "https://www.youtube.com/watch?v=MvYs6UHy5Jg",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "defense-l3harris-model-cost-reduction-pct",
+      "industryId": "defense",
+      "metric": "cost_reduction_pct",
+      "unit": "percent",
+      "label": "L3Harris fine-tuned vs frontier model cost reduction %",
+      "note": "Sovereign AI experiment outcome; narrow task, not fleet-wide spend.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 95,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 L3Harris \u2014 fine-tuned open-source model cost 95% lower than frontier models (country-of-origin workflow experiment)",
+          "url": "https://www.youtube.com/watch?v=MvYs6UHy5Jg",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "defense-l3harris-mvp-weeks",
+      "industryId": "defense",
+      "metric": "cycle_time_weeks",
+      "unit": "weeks",
+      "label": "L3Harris Program Digital Cockpit MVP delivery (weeks)",
+      "note": "Build velocity metric; lower is better. Single point.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 12,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 L3Harris \u2014 Program Digital Cockpit MVP in 12 weeks",
+          "url": "https://www.youtube.com/watch?v=MvYs6UHy5Jg",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-cavanagh-employees",
+      "industryId": "manufacturing",
+      "metric": "users",
+      "unit": "count",
+      "label": "Thomas Cavanagh Construction employees on Foundry workforce app",
+      "note": "Construction OS (OSDK app). Blog primary.",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 1000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 blog \u2014 Thomas Cavanagh Construction workforce app deployed to over 1,000 employees",
+          "url": "https://blog.palantir.com/inside-the-aipcon-8-demos-transforming-manufacturing-insurance-and-construction-2ef01d53ea96",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-fujitsu-applications",
+      "industryId": "manufacturing",
+      "metric": "applications",
+      "unit": "count",
+      "label": "Fujitsu internal Foundry applications",
+      "note": "Internal app count; floor of \"more than 100\".",
+      "points": [
+        {
+          "date": "2024-06-06",
+          "value": 100,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 4 Fujitsu \u2014 spoken 'built more than 100 applications' internally on Foundry",
+          "url": "https://www.youtube.com/watch?v=JBvUK_EOod8",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-fujitsu-customer-savings-usd",
+      "industryId": "manufacturing",
+      "metric": "value_unlocked_usd",
+      "unit": "usd",
+      "label": "Fujitsu customer SCM annual cost savings (USD)",
+      "note": "Customer ROI claim via Fujitsu implementation, not Fujitsu\u2192PLTR contract value.",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 10000000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 Fujitsu \u2014 Japanese manufacturer customer: annual cost saving 'over $10 million'; 50% labor reduction; 3,000 suppliers / 18 factories (also in Sep 2026 BW)",
+          "url": "https://www.youtube.com/watch?v=A47Nuav7X-4",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-fujitsu-users",
+      "industryId": "manufacturing",
+      "metric": "users",
+      "unit": "count",
+      "label": "Fujitsu internal Foundry users",
+      "note": "SI partner dogfood scale (Japan #1 IT). Placed under manufacturing/industrial for customer SCM export narrative.",
+      "points": [
+        {
+          "date": "2024-06-06",
+          "value": 15000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 4 Fujitsu \u2014 spoken '15,000 Foundry users' and 'more than 100 Foundry engineers' / 'more than 100 applications'",
+          "url": "https://www.youtube.com/watch?v=JBvUK_EOod8",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-generalmills-plants",
+      "industryId": "manufacturing",
+      "metric": "sites",
+      "unit": "count",
+      "label": "General Mills North America plants (ops scale)",
+      "note": "Company footprint context for Foundry intelligent execution.",
+      "points": [
+        {
+          "date": "2024-03-01",
+          "value": 200,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 3 General Mills \u2014 spoken over 200 plants in North America fed by ~4,000 suppliers",
+          "url": "https://www.youtube.com/watch?v=r_iIiVtKLX8",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-generalmills-savings-usd",
+      "industryId": "manufacturing",
+      "metric": "value_unlocked_usd",
+      "unit": "usd",
+      "label": "General Mills intelligent-execution annual savings (USD)",
+      "note": "CPG supply chain under manufacturing/industrial. Also cited 4,000 suppliers / 200+ NA plants / 70% recommendation acceptance.",
+      "points": [
+        {
+          "date": "2024-03-01",
+          "value": 14000000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 3 General Mills \u2014 spoken '~$40,000/day \u2248 $14 million annually' savings from intelligent execution",
+          "url": "https://www.youtube.com/watch?v=r_iIiVtKLX8",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-heineken-accounts",
+      "industryId": "manufacturing",
+      "metric": "accounts",
+      "unit": "count",
+      "label": "Heineken accounts in next-best-item AIP use case",
+      "note": "Beverage/CPG supply chain under manufacturing.",
+      "points": [
+        {
+          "date": "2025-03-13",
+          "value": 350000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 Heineken \u2014 next-best-item across '350,000 accounts'; also 33k containers / 66k trucks / 450 customers (US import ops)",
+          "url": "https://www.youtube.com/watch?v=uo6y_0DG29I",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-lear-facilities",
+      "industryId": "manufacturing",
+      "metric": "sites",
+      "unit": "count",
+      "label": "Lear global facilities (company footprint)",
+      "note": "Company site count cited while discussing Foundry scale opportunity; distinct from 175 JIT plants on control tower.",
+      "points": [
+        {
+          "date": "2024-09-15",
+          "value": 265,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 5 Lear \u2014 spoken 265 facilities / sites globally (company footprint; Foundry scaling opportunity)",
+          "url": "https://www.youtube.com/watch?v=HNe4S0h3oKM",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-mccarthy-activities",
+      "industryId": "manufacturing",
+      "metric": "activities",
+      "unit": "count",
+      "label": "McCarthy Pulse concurrent construction activities",
+      "note": "Construction OS placed under manufacturing/industrial. Secondary LinkedIn primary; multi-year multi-million $ partnership also in McCarthy press.",
+      "points": [
+        {
+          "date": "2026-06-04",
+          "value": 5000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 10 McCarthy Pulse \u2014 risks across 5,000 concurrent activities (Palantir LinkedIn AIPCon 10 post)",
+          "url": "https://www.youtube.com/watch?v=P9gQP88eQ-k",
+          "confidence": "med"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-partstown-technicians",
+      "industryId": "manufacturing",
+      "metric": "field_technicians",
+      "unit": "count",
+      "label": "Parts Town field technicians on ontology dispatch",
+      "note": "Specialty distribution / field service; industrial ops proxy under manufacturing.",
+      "points": [
+        {
+          "date": "2026-06-04",
+          "value": 1800,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 10 Parts Town \u2014 Ontology-powered dispatch/routing across 1,800 field technicians (Palantir LinkedIn / YT cut)",
+          "url": "https://www.youtube.com/watch?v=Ok6j_IbuTxo",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-ursamajor-eng-hours-saved",
+      "industryId": "manufacturing",
+      "metric": "hours_saved_annual",
+      "unit": "hours",
+      "label": "Ursa Major projected engineering hours saved / year",
+      "note": "Projected range midpoint from Palantir AIPCon 8 blog; Warp Speed MES. Defense-aerospace manufacturer.",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 12500,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 blog (Ursa Major demo) \u2014 projected '10,000 to 15,000 hours of engineering time annually' (midpoint 12,500)",
+          "url": "https://blog.palantir.com/inside-the-aipcon-8-demos-transforming-manufacturing-insurance-and-construction-2ef01d53ea96",
+          "confidence": "med"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "manufacturing-wendys-restaurants",
+      "industryId": "manufacturing",
+      "metric": "sites",
+      "unit": "count",
+      "label": "Wendy's QSCC restaurants in supply-chain network",
+      "note": "Foodservice supply chain under manufacturing.",
+      "points": [
+        {
+          "date": "2025-03-13",
+          "value": 6500,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 Wendy's QSCC \u2014 spoken orders from '6,500 restaurants'; inventory/Frosty supply-chain demo",
+          "url": "https://www.youtube.com/watch?v=8wX9YjrR_1k",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "healthcare-hss-appeal-minutes",
+      "industryId": "healthcare",
+      "metric": "cycle_time_minutes",
+      "unit": "minutes",
+      "label": "HSS insurance appeal handling time (minutes)",
+      "note": "Before\u2192after from AIPCon 8 captions / Palantir LinkedIn. Pre date approximate (partnership start ~early 2025).",
+      "points": [
+        {
+          "date": "2025-01-01",
+          "value": 45,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 HSS \u2014 45 minutes manual appeal work (pre)",
+          "url": "https://www.youtube.com/watch?v=mKp3TTggihU",
+          "confidence": "high"
+        },
+        {
+          "date": "2025-09-08",
+          "value": 5,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 HSS \u2014 appeal work down to 5 minutes (built in ~5 weeks)",
+          "url": "https://www.youtube.com/watch?v=mKp3TTggihU",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 2,
+      "insufficientForTrend": false
+    },
+    {
+      "id": "healthcare-hss-appeal-success-pct",
+      "industryId": "healthcare",
+      "metric": "success_rate_pct",
+      "unit": "percent",
+      "label": "HSS insurance appeal success rate %",
+      "note": "Newsweek interview of HSS CDTO around AIPCon 8. Pre date approximate.",
+      "points": [
+        {
+          "date": "2025-01-01",
+          "value": 68,
+          "sourceType": "aipcon",
+          "sourceRef": "HSS AIPCon 8 / Newsweek quote \u2014 appeals success 68% \u2192 99%",
+          "url": "https://www.newsweek.com/ai-goes-mission-critical-palantir-powers-essential-systems-2126666",
+          "confidence": "med"
+        },
+        {
+          "date": "2025-09-08",
+          "value": 99,
+          "sourceType": "aipcon",
+          "sourceRef": "HSS AIPCon 8 / Newsweek \u2014 appeals success 99%",
+          "url": "https://www.newsweek.com/ai-goes-mission-critical-palantir-powers-essential-systems-2126666",
+          "confidence": "med"
+        }
+      ],
+      "pointCount": 2,
+      "insufficientForTrend": false
+    },
+    {
+      "id": "healthcare-hss-patients-annual",
+      "industryId": "healthcare",
+      "metric": "patients_annual",
+      "unit": "count",
+      "label": "HSS patients cared for / year (ops scale)",
+      "note": "Institutional scale context for Patient Card / RCM.",
+      "points": [
+        {
+          "date": "2025-09-08",
+          "value": 200000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 8 blog HSS \u2014 >200,000 patients; >40,000 surgical procedures/year",
+          "url": "https://blog.palantir.com/inside-the-aipcon-8-demos-redefining-the-future-of-enterprise-ai-a0a740fe44ce",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "healthcare-mountsinai-denial-minutes",
+      "industryId": "healthcare",
+      "metric": "cycle_time_minutes",
+      "unit": "minutes",
+      "label": "Mount Sinai clinical denial letter time (minutes)",
+      "note": "Before\u2192after from AIPCon 5 captions. Pre date approximate.",
+      "points": [
+        {
+          "date": "2024-06-01",
+          "value": 52,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 5 Mount Sinai \u2014 denial letter 45 minutes\u20131 hour (midpoint 52.5\u224852) pre-LLM",
+          "url": "https://www.youtube.com/watch?v=pNiQgc7qLhU",
+          "confidence": "med"
+        },
+        {
+          "date": "2024-09-15",
+          "value": 8,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 5 Mount Sinai \u2014 denial letter created/reviewed in ~8 minutes; cited ~$133M revenue impact expectation",
+          "url": "https://www.youtube.com/watch?v=pNiQgc7qLhU",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 2,
+      "insufficientForTrend": false
+    },
+    {
+      "id": "healthcare-nebraska-discharge-accuracy-pct",
+      "industryId": "healthcare",
+      "metric": "model_accuracy_pct",
+      "unit": "percent",
+      "label": "Nebraska Medicine discharge prediction accuracy %",
+      "note": "Clinical ops model accuracy from AIPCon 7 captions.",
+      "points": [
+        {
+          "date": "2025-06-01",
+          "value": 95,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 7 Nebraska Medicine \u2014 spoken '95% discharge prediction accuracy'",
+          "url": "https://www.youtube.com/watch?v=VM2XylCVYXI",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "healthcare-nebraska-review-minutes",
+      "industryId": "healthcare",
+      "metric": "cycle_time_minutes",
+      "unit": "minutes",
+      "label": "Nebraska Medicine physician review cycle time (minutes)",
+      "note": "Before\u2192after from AIPCon 7. Pre date approximate.",
+      "points": [
+        {
+          "date": "2024-06-01",
+          "value": 80,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 7 Nebraska Medicine \u2014 physician review average was 80 minutes (pre)",
+          "url": "https://www.youtube.com/watch?v=VM2XylCVYXI",
+          "confidence": "high"
+        },
+        {
+          "date": "2025-06-01",
+          "value": 7,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 7 Nebraska Medicine \u2014 review reduced to 7 minutes; 50\u201370 pages \u2192 2",
+          "url": "https://www.youtube.com/watch?v=VM2XylCVYXI",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 2,
+      "insufficientForTrend": false
+    },
+    {
+      "id": "healthcare-tampa-lives-saved-annual",
+      "industryId": "healthcare",
+      "metric": "lives_saved_annual",
+      "unit": "count",
+      "label": "Tampa General sepsis lives saved / year (est.)",
+      "note": "Management estimate from AIPCon 5; clinical outcome not PLTR revenue.",
+      "points": [
+        {
+          "date": "2024-09-15",
+          "value": 300,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 5 Tampa General \u2014 sepsis program 'save about 300 lives a year' (conservative estimate)",
+          "url": "https://www.youtube.com/watch?v=q4bHiM-eePs",
+          "confidence": "med"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "healthcare-tampa-los-reduction-pct",
+      "industryId": "healthcare",
+      "metric": "los_reduction_pct",
+      "unit": "percent",
+      "label": "Tampa General length-of-stay reduction %",
+      "note": "Ops outcome from AIPCon 4 (~30 months into partnership).",
+      "points": [
+        {
+          "date": "2024-06-06",
+          "value": 30,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 4 Tampa General \u2014 spoken reduced length of stay by 30%",
+          "url": "https://www.youtube.com/watch?v=B1j8qP-Nevs",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "healthcare-walgreens-stores",
+      "industryId": "healthcare",
+      "metric": "sites",
+      "unit": "count",
+      "label": "Walgreens stores on Foundry pharmacy workflows",
+      "note": "Retail pharmacy under Healthcare. Rollout scale; also cited ~30% ops efficiency / 32% patient engagement lift.",
+      "points": [
+        {
+          "date": "2025-03-13",
+          "value": 4000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 6 Walgreens \u2014 pilot 10 stores \u2192 ~4,000 stores within 8 months on Foundry pharmacy workflows",
+          "url": "https://www.youtube.com/watch?v=10l8KScaPoE",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "fs-acrisure-acquisitions",
+      "industryId": "fs",
+      "metric": "acquisitions",
+      "unit": "count",
+      "label": "Acrisure M&A roll-up companies on Auris AI journey",
+      "note": "From AIPCon 11 transcript. Integration complexity / industry-chain ambition proxy.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 1000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 Acrisure \u2014 spoken 'close to 1,000 businesses' / '1,000 acquisitions' rolled up into Auris AI platform",
+          "url": "https://www.youtube.com/watch?v=HPUVkVmIitA",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "fs-acrisure-carrier-partners",
+      "industryId": "fs",
+      "metric": "carriers",
+      "unit": "count",
+      "label": "Acrisure carrier partners in Exchange marketplace",
+      "note": "Marketplace breadth for Auris AI quote/bind orchestration.",
+      "points": [
+        {
+          "date": "2026-09-10",
+          "value": 2000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 11 Acrisure \u2014 spoken 'over 2,000 carrier partners'",
+          "url": "https://www.youtube.com/watch?v=HPUVkVmIitA",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "fs-aig-data-quality-pct",
+      "industryId": "fs",
+      "metric": "model_accuracy_pct",
+      "unit": "percent",
+      "label": "AIG underwriter-assistance data quality accuracy %",
+      "note": "Extraction/attribute quality vs manual input process.",
+      "points": [
+        {
+          "date": "2025-06-01",
+          "value": 90,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 7 AIG \u2014 spoken 'over a 90% data quality accuracy rate' vs manual; underwriting capacity unlock 2\u20135x; cycle month\u2192day",
+          "url": "https://www.youtube.com/watch?v=q4MSG5av4vk",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
+    },
+    {
+      "id": "fs-sompo-profit-improvement-usd",
+      "industryId": "fs",
+      "metric": "value_unlocked_usd",
+      "unit": "usd",
+      "label": "SOMPO underwriting profit improvement (USD, 3-year cumulative)",
+      "note": "Customer claim from AIPCon 4 talk. Distinct from later 8,000+ users press (2025-08-12).",
+      "points": [
+        {
+          "date": "2024-06-06",
+          "value": 60000000,
+          "sourceType": "aipcon",
+          "sourceRef": "AIPCon 4 Sompo \u2014 spoken '$60 million U.S. dollar improvement in profit' over last 3 years; expect additional ~$100M next 3 years",
+          "url": "https://www.youtube.com/watch?v=55kSbkkeHjc",
+          "confidence": "high"
+        }
+      ],
+      "pointCount": 1,
+      "insufficientForTrend": true
     }
   ]
 }
