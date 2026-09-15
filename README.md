@@ -75,3 +75,9 @@ Prefer metrics that can accumulate over time (use cases, users, sources) over on
 ## License / use
 
 Internal research dashboard seed. Not investment advice.
+
+## GitHub Pages
+
+Live site (after Actions deploy): https://kangning-huang.github.io/pltr-penetration-dashboard/
+
+Deployed from `main` via `.github/workflows/deploy-pages.yml`.

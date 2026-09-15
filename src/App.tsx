@@ -27,9 +27,10 @@ export default function App() {
     let cancelled = false;
     (async () => {
       try {
+        const base = import.meta.env.BASE_URL;
         const [indRes, serRes] = await Promise.all([
-          fetch('/data/industries.json'),
-          fetch('/data/series.json'),
+          fetch(`${base}data/industries.json`),
+          fetch(`${base}data/series.json`),
         ]);
         if (!indRes.ok || !serRes.ok) {
           throw new Error('Failed to load data JSON');
